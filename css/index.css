@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#container {
+  background-color: #008080;
+}
+
+/* ============= Window Styling ============= */
+
+.win98 {
+  display: grid;
+  grid-template: 1fr 1fr minmax(3fr, auto) / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* "3" x 11 */
+}
+
+.win98-top {
+
+}
+
+.win98-logo {
+
+}
+
+.win98-top-btns {
+
+}
+
+.win98-top-btn {
+
+}
+
+.win98-actions {
+
+}
+
+.win98-action {
+
+}
+
+.win98-body {
+
+}
+
+/* ============= Shortcut Styling ============= */
+
+.shortcut {
+
+}
+
+.shortcut-icon {
+
+}
+
+.shortcut-name {
+
+}
+
+/* ============= Taskbar Styling ============= */
+
+#taskbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* 1x22 */
+}
+
+#start-btn {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#start-btn-icon {
+
+}
+
+#taskbar-qwkbar {
+
+}
+
+#taskbar-info {
+
+}
