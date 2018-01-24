@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-#container {
+#desktop {
   background-color: #008080;
 }
 
@@ -13,48 +13,92 @@
   display: grid;
   grid-template: 1fr 1fr minmax(3fr, auto) / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   /* "3" x 11 */
+  background: #c0c0c0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
 }
 
 .win98-top {
-
+  grid-area: 1 / 2 / 1 / 12;
+  display: grid;
+  grid-template: 1fr 2fr 1fr / 1fr 2fr 31fr 9fr;
 }
 
 .win98-logo {
-
+  grid-area: 2 / 3 / 2 / 3;
+  /* background-image: url(''); */
+  /* background-size: 16px 16px; */
 }
 
 .win98-top-btns {
-
+  grid-area: 2 / 3 / 4 / 5;
 }
 
 .win98-top-btn {
-
+  grid-row: 2fr / 3fr;
 }
 
 .win98-actions {
-
+  grid-area: 2 / 3 / 1 / 12;
+  display: grid;
+  grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* 4 x 11 */
+  line-height: 1;
+  color: #000;
+  font-size: 11px;
 }
 
 .win98-action {
-
+  grid-row: 2fr / 3fr;
 }
 
 .win98-body {
-
+  grid-area: 3 / 4 / 1 / 12;
+  border: 1px solid;
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  font-size: 13px;
 }
 
 /* ============= Shortcut Styling ============= */
 
 .shortcut {
+  display: grid;
+  grid-template: 1fr 4fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
+}
+
+.shortcut-spacer-top {
+  grid-area: 1 / 2 / 1 / 9;
+}
+
+.shortcut-spacer-vert-l {
+  grid-area: 2 / 3 / 1 / 3;
 }
 
 .shortcut-icon {
+  grid-area: 2 / 3 / 3 / 7;
+}
 
+.shortcut-spacer-vert-r {
+  grid-area: 2 / 3 / 7 / 9;
+}
+
+.shortcut-spacer-mid {
+  grid-area: 3 / 4 / 1 / 9;
 }
 
 .shortcut-name {
+  grid-area: 4 / 5 / 2 / 8;
+}
 
+.shortcut-spacer-bot {
+  grid-area: 5 / 6 / 1 / 9;
 }
 
 /* ============= Taskbar Styling ============= */
@@ -62,7 +106,7 @@
 #taskbar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* 1x22 */
+  /* 1 x 22 */
 }
 
 #start-btn {
