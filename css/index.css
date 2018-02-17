@@ -11,6 +11,10 @@
   grid-template: repeat(15, 1fr) / repeat(22, 1fr);
 }
 
+.temptext {
+  grid-area: 2 / 4 / 2 / 4;
+}
+
 /* ============= Window Styling ============= */
 
 .win98 {
