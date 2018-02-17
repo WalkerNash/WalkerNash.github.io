@@ -5,13 +5,17 @@
 
 #desktop {
   background-color: #008080;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template: repeat(15, 1fr) / repeat(22, 1fr);
 }
 
 /* ============= Window Styling ============= */
 
 .win98 {
   display: grid;
-  grid-template: 1fr 1fr minmax(3fr, auto) / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 1fr minmax(3fr, auto) / repeat(11, 1fr);
   /* "3" x 11 */
   background: #c0c0c0;
   border: 1px solid;
@@ -44,7 +48,7 @@
 .win98-actions {
   grid-area: 2 / 3 / 1 / 12;
   display: grid;
-  grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 2fr 1fr / repeat(10, 1fr);
   /* 4 x 11 */
   line-height: 1;
   color: #000;
@@ -69,7 +73,7 @@
 
 .shortcut {
   display: grid;
-  grid-template: 1fr 4fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template: 1fr 4fr 1fr 1fr 1fr / repeat(8, 1fr);
 
 }
 
@@ -104,8 +108,12 @@
 /* ============= Taskbar Styling ============= */
 
 #taskbar {
+  height: 50px;
+  background-color: rgb(192,192,192);
+  position: absolute;
+  grid-area: 14 / 15 / 1 / 22;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(22, 1fr);
   /* 1 x 22 */
 }
 
