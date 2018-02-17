@@ -13,7 +13,7 @@
 
 .temptext {
   grid-area: 2 / 2 / 5 / 8;
-  background: white;
+  color: white;
   font-size: 1em;
 }
 
